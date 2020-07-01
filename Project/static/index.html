@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .counter {
+            padding: 10px;
+            margin: 10px;
+            background-color: #00e6e6;
+            border: 1px solid green;
+            width: 200px;
+        }
+    </style>
+
+    <script>
+        // GET request on /visit and then parse JSON
+        fetch("/visit").then(response => response.json()).then(value => {
+            document.getElementById("countervalue").innerHTML = value;
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Welcome Visitor!</h1>
+    <div class="counter">
+        You are visitor number: <span id="countervalue"></span>
+    </div>
+</body>
+</html>

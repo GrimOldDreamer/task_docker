@@ -27,5 +27,5 @@ storage.init().then(() => storage.getItem("counter")).then((value) => {
     }
 
 
-    app.listen(PORT, "0.0.0.0");
+    app.listen(PORT, HOST);
 });

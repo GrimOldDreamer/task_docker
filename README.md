@@ -1,9 +1,8 @@
 ### Description
 
-This service is for count every visit
-It shows webpage with current visitor numbee
+This service show number of webpage visits
 
-Counter information storing in JSON file at /.node-persist/storage folder
+Counter information stores in JSON file at /.node-persist/storage folder
 
 ### How to start
 

@@ -7,11 +7,13 @@ Counter information stores in JSON file at /.node-persist/storage folder
 ### How to start
 
 Docker Image Build command:
-docker build -t yourimage_name /path/to/Dockerfile
+docker build -t nodejs-app .
 
 Docker Run command:
-docker run -d --env PORT=XXXX --env HOST --env -p docker_host_port:docker_container_port name_of_image
+docker run -d --env PORT=4000 --env HOST="0.0.0.0" -p 4000:4000 --name test-app  nodejs-app
 
+Docker Run command without building image:
+docker run -d --env PORT=4000 --env HOST="0.0.0.0" -p 4000:4000 --name test-app  grimolddreamer/nodejs-app:1.0
 
 ### Environment Variables
 
